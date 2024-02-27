@@ -1,13 +1,14 @@
 body {
-    font-family: 'Clash Display', 'General Sans', sans-serif;
+    font-family: 'Clash Display', sans-serif;
     color: white;
     background-color: black;
     margin: 0;
-    padding: 2% 10%;
+    padding: 0 10%;
 }
 
 h1 {
     font-size: 5rem;
+    margin-bottom: 1rem; /* Уменьшено расстояние между h1 и следующим за ним контентом */
 }
 
 h2 {
@@ -18,13 +19,19 @@ h3 {
     font-size: 1.5rem;
 }
 
+h4 {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
 p {
     font-size: 1rem;
-    font-family: 'General Sans', sans-serif;
+    font-weight: normal;
+    margin-bottom: 0.5rem;
 }
 
 header {
-    padding: 0.5rem 10%;
+    padding: 1rem 10%; /* Если расстояние всё ещё слишком большое, попробуйте уменьшить верхний padding */
 }
 
 .header-container {
@@ -39,8 +46,7 @@ header {
     color: #808080;
     border: none;
     cursor: pointer;
-    font-family: 'General Sans', sans-serif;
-    padding: 0.5em 1em;
+     padding: 0.5em 1em;
     transition: color 0.3s ease;
 }
 
@@ -56,7 +62,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .intro-text, .lucky-text, .intro-img, .lucky-img {
@@ -90,21 +96,15 @@ main {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: -0.5rem;
+    gap: 1rem; /* Добавлено для создания пространства между продуктами */
 }
 
 .product {
-    width: calc(33.333% - 1rem);
-    margin: 0.5rem;
+    width: calc(33.333% - 2rem); /* Уменьшено, чтобы учесть gap */
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.product h3 {
-    font-weight: normal;
-    font-size: 1.5rem;
-    margin: 0.5rem 0;
+    margin-bottom: 2rem;
 }
 
 .product img {
@@ -142,3 +142,4 @@ footer a {
 footer a:hover {
     color: #ffc107;
 }
+
