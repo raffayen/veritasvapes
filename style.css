@@ -1,37 +1,61 @@
+/* General Styles */
 body {
     font-family: 'Clash Display', sans-serif;
-    color: white;
-    background-color: black;
+    color: #FFFFFF;
+    background-color: #000000;
     margin: 0;
     padding: 0 10%;
 }
 
-h1 {
-    font-size: 5rem;
-    margin-bottom: 1rem; /* Уменьшено расстояние между h1 и следующим за ним контентом */
+h1, h2, .section-title {
+    font-weight: bold;
 }
 
-h2 {
+h1 {
     font-size: 2rem;
 }
 
-h3 {
-    font-size: 1.5rem;
-}
-
-h4 {
-    font-size: 1.5rem;
-    font-weight: normal;
+h2, .section-title {
+    font-size: 3rem;
+    margin: 1rem 0;
 }
 
 p {
-    font-size: 1rem;
-    font-weight: normal;
+    font-size: 1.25rem;
     margin-bottom: 0.5rem;
 }
 
+/* Button Styles */
+.btn {
+    padding: 10px 20px;
+    font-family: 'General Sans', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-login {
+    background: none;
+    color: #808080;
+}
+
+.btn-login:hover, .btn-primary:hover {
+    color: #FFFFFF;
+}
+
+.btn-primary {
+    background-color: #ffc107;
+    color: #000000;
+    display: block; /* Adjusted for full width */
+    width: 100%; /* Adjusted for full width */
+    box-sizing: border-box; /* Adjusted for full width */
+}
+
+/* Header Styles */
 header {
-    padding: 1rem 10%; /* Если расстояние всё ещё слишком большое, попробуйте уменьшить верхний padding */
+    padding: 1rem 10%;
 }
 
 .header-container {
@@ -40,20 +64,7 @@ header {
     align-items: center;
 }
 
-.login-button {
-    font-size: 1rem;
-    background: none;
-    color: #808080;
-    border: none;
-    cursor: pointer;
-     padding: 0.5em 1em;
-    transition: color 0.3s ease;
-}
-
-.login-button:hover {
-    color: #ffc107;
-}
-
+/* Main Content Styles */
 main {
     padding: 2% 10%;
 }
@@ -65,81 +76,15 @@ main {
     margin-bottom: 1rem;
 }
 
-.intro-text, .lucky-text, .intro-img, .lucky-img {
+.intro-content, .lucky-content, .intro-media, .lucky-media {
     width: 48%;
 }
 
-.intro-img, .lucky-img {
-    margin: 0 2%;
+.lucky-content {
+    text-align: left; /* Adjusted for left alignment */
 }
 
-.section-title {
-    width: 100%;
-    text-align: center;
-    font-size: 3rem;
-    margin: 2rem 0;
-}
-
-.products-section {
-    text-align: center;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.line-title {
-    font-size: 2rem;
-    text-align: left;
-    margin-bottom: 2rem;
-}
-
-.products {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 1rem; /* Добавлено для создания пространства между продуктами */
-}
-
-.product {
-    width: calc(33.333% - 2rem); /* Уменьшено, чтобы учесть gap */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 2rem;
-}
-
-.product img {
+.responsive-img {
     max-width: 100%;
     height: auto;
-    max-height: 300px;
 }
-
-button {
-    padding: 10px 20px;
-    background-color: #ffc107;
-    color: black;
-    border: none;
-    cursor: pointer;
-    font-family: 'General Sans', sans-serif;
-    font-size: 1rem;
-    text-align: center;
-    transition: background-color 0.3s ease;
-}
-
-footer {
-    color: #808080;
-    text-align: center;
-    padding: 1rem 10%;
-    font-family: 'General Sans', sans-serif;
-}
-
-footer a {
-    color: #808080;
-    text-decoration: none;
-    padding: 0 0.5rem;
-    transition: color 0.3s ease;
-}
-
-footer a:hover {
-    color: #ffc107;
-}
-
