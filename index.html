@@ -6,6 +6,7 @@
     <link href="https://api.fontshare.com/v2/css?f%5B%5D=clash-display@1&f%5B%5D=general-sans@1&display=swap"
           rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9ed0b8c48d.js" crossorigin="anonymous"></script>
     <title>kaif.</title>
 </head>
 <body>
@@ -39,6 +40,38 @@
             <button class="btn btn-primary">Get it!</button>
         </article>
     </section>
+    <div id="modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close-button" style="position: absolute; right: 10px; top: 10px; cursor: pointer;"><i
+                    class="fas fa-times"></i></span>
+            <h2>Gewinn abholen</h2>
+            <form>
+                <div class="form-group">
+                    <label for="recipient-name">Empfängername</label>
+                    <input type="text" id="recipient-name" name="recipient-name">
+                </div>
+                <div class="form-group">
+                    <label for="meeting-location">Treffpunkt</label>
+                    <select id="meeting-location" name="meeting-location">
+                        <option value="location1">Ort 1</option>
+                        <option value="location2">Ort 2</option>
+                    </select>
+                </div>
+                <div class="form-group radio-group">
+                    <label>Abholzeit</label>
+                    <div class="switch-field">
+                        <input type="radio" id="switch_left" name="switch_time" value="pause1" checked/>
+                        <label for="switch_left" class="radio-label">1. Pause</label>
+                        <input type="radio" id="switch_right" name="switch_time" value="pause2"/>
+                        <label for="switch_right" class="radio-label">2. Pause</label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-submit">Einreichen</button>
+            </form>
+        </div>
+    </div>
+
 </main>
+<script src="script.js"></script>
 </body>
 </html>
