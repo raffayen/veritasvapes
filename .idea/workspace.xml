@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="814dc206-d97c-4481-8991-399f55403655" name="Changes" comment="enhanced commit 3">
-      <change beforePath="$PROJECT_DIR$/.idea/vapes-05.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vapes-05.iml" afterDir="false" />
+    <list default="true" id="814dc206-d97c-4481-8991-399f55403655" name="Changes" comment="commit 4; form added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +50,8 @@
       <option name="presentableId" value="Default" />
       <updated>1709060213880</updated>
       <workItem from="1709060214915" duration="2591000" />
-      <workItem from="1709134415828" duration="23679000" />
+      <workItem from="1709134415828" duration="23983000" />
+      <workItem from="1709192361690" duration="1253000" />
     </task>
     <task id="LOCAL-00001" summary="enhanced commit 2">
       <option name="closed" value="true" />
@@ -87,7 +85,23 @@
       <option name="project" value="LOCAL" />
       <updated>1709145291378</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="enhanced commit 3">
+      <option name="closed" value="true" />
+      <created>1709162888605</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1709162888605</updated>
+    </task>
+    <task id="LOCAL-00006" summary="commit 4; form added">
+      <option name="closed" value="true" />
+      <created>1709162920389</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1709162920389</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,6 +121,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="enhanced commit 2" />
     <MESSAGE value="enhanced commit 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="enhanced commit 3" />
+    <MESSAGE value="commit 4; form added" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit 4; form added" />
   </component>
 </project>

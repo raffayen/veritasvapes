@@ -42,10 +42,9 @@ p {
 }
 
 .btn-submit {
-    background-color: #333;
     color: #fff;
-    border: 1px solid #888;
-    padding: 10px 20px;
+    border: 1px solid #fff;
+    padding: 10px 30px;
     font-size: 1rem;
     cursor: pointer;
     display: inline-block;
@@ -53,9 +52,12 @@ p {
     margin-top: 10px;
 }
 
-.btn-submit:hover {
-    background-color: #444;
-}
+/*.btn-submit:hover {*/
+/*    border: 1px solid #ffc107;*/
+/*    color: black;*/
+/*    background-color: #ffc107;*/
+/*    transition: 0.3s ease;*/
+/*}*/
 
 .btn-primary {
     background-color: #ffc107;
@@ -119,10 +121,9 @@ main {
 }
 
 .modal-content {
-    background-color: #333;
+    background-color: black;
     margin: auto;
     padding: 20px;
-    border: 1px solid #888;
     width: 25%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -141,7 +142,7 @@ main {
     padding: 10px;
     border: none;
     border-radius: 4px;
-    background-color: #444;
+    background-color: #282828;
     color: #fff;
     max-width: 500px;
     margin: auto;
@@ -162,7 +163,6 @@ label {
     text-align: center;
     margin: 0 5px;
     padding: 10px 0;
-    background-color: #444;
     color: white;
     border-radius: 4px;
     transition: background-color 0.3s;
@@ -177,7 +177,7 @@ label {
 
 .switch-field label {
     display: inline-block;
-    background-color: #444;
+    background-color: #282828;
     color: #fff;
     padding: 10px;
     border-radius: 4px;
