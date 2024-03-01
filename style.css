@@ -4,7 +4,7 @@ body {
     color: #FFFFFF;
     background-color: #000000;
     margin: 0;
-    padding: 0 10%;
+    padding: 1% 10%;
 }
 
 h1, h2, .section-title, p, .btn {
@@ -13,7 +13,7 @@ h1, h2, .section-title, p, .btn {
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: bold;
 }
 
@@ -32,6 +32,7 @@ p {
     font-size: 1.25rem;
     text-align: center;
     border: none;
+    border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -44,20 +45,14 @@ p {
 .btn-submit {
     color: #fff;
     border: 1px solid #fff;
+    border-radius: 4px;
     padding: 10px 30px;
-    font-size: 1rem;
+    font-size: 1.25rem;
     cursor: pointer;
     display: inline-block;
     width: auto;
     margin-top: 10px;
 }
-
-/*.btn-submit:hover {*/
-/*    border: 1px solid #ffc107;*/
-/*    color: black;*/
-/*    background-color: #ffc107;*/
-/*    transition: 0.3s ease;*/
-/*}*/
 
 .btn-primary {
     background-color: #ffc107;
@@ -100,34 +95,26 @@ main {
 
 .modal {
     display: none;
-    align-items: center;
-    justify-content: center;
     position: fixed;
     z-index: 1;
     left: 0;
-    bottom: -100%;
+    top: 0;
     width: 100%;
     height: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.4);
-    animation: slideUp 0.5s forwards;
-}
-
-.close-button {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    cursor: pointer;
+    align-items: center;
+    justify-content: center;
 }
 
 .modal-content {
-    background-color: black;
+    background-color: #000;
     margin: auto;
     padding: 20px;
-    width: 25%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    position: relative;
+    width: 25%;
+    box-shadow: 0 0 80px rgba(255, 255, 255, 0.25);
+    animation-fill-mode: forwards;
 }
 
 .form-group {
@@ -137,13 +124,14 @@ main {
 
 .form-group input[type="text"],
 .form-group select {
+    font-size: 1.25rem;
     width: 100%;
     box-sizing: border-box;
     padding: 10px;
-    border: none;
-    border-radius: 4px;
-    background-color: #282828;
+    background-color: #222;
     color: #fff;
+    border-radius: 4px;
+    border: none;
     max-width: 500px;
     margin: auto;
 }
@@ -163,7 +151,6 @@ label {
     text-align: center;
     margin: 0 5px;
     padding: 10px 0;
-    color: white;
     border-radius: 4px;
     transition: background-color 0.3s;
 }
@@ -177,8 +164,7 @@ label {
 
 .switch-field label {
     display: inline-block;
-    background-color: #282828;
-    color: #fff;
+    background-color: #222;
     padding: 10px;
     border-radius: 4px;
     cursor: pointer;
@@ -197,8 +183,68 @@ input[type="radio"]:checked + label {
     color: #000;
 }
 
-@keyframes slideUp {
-    to {
-        bottom: 0;
+select {
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    background-color: #222;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+select:focus {
+    outline: none;
+    border-color: #ffc107;
+}
+
+option {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+.modal-content {
+    color: #fff;
+    width: 90%;
+    max-width: 500px;
+}
+
+.form-group label {
+    color: #808080;
+}
+
+.modal-show {
+    display: flex;
+    animation: modalIn 0.3s forwards;
+}
+
+.modal-hide {
+    animation: modalOut 0.3s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
     }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.modal-show-background {
+    animation: fadeIn 0.3s forwards;
+}
+
+.modal-hide-background {
+    animation: fadeOut 0.3s forwards;
 }
