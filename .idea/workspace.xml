@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="814dc206-d97c-4481-8991-399f55403655" name="Changes" comment="commit 5; enhanced colorscheme">
+    <list default="true" id="814dc206-d97c-4481-8991-399f55403655" name="Changes" comment="commit 6; enhanced form">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
@@ -54,7 +54,7 @@
       <workItem from="1709060214915" duration="2591000" />
       <workItem from="1709134415828" duration="23983000" />
       <workItem from="1709192361690" duration="16792000" />
-      <workItem from="1709329658485" duration="1273000" />
+      <workItem from="1709329658485" duration="1579000" />
     </task>
     <task id="LOCAL-00001" summary="enhanced commit 2">
       <option name="closed" value="true" />
@@ -112,7 +112,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709193781392</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="commit 6; enhanced form">
+      <option name="closed" value="true" />
+      <created>1709331580640</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1709331580640</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,6 +142,7 @@
     <MESSAGE value="enhanced commit 3" />
     <MESSAGE value="commit 4; form added" />
     <MESSAGE value="commit 5; enhanced colorscheme" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit 5; enhanced colorscheme" />
+    <MESSAGE value="commit 6; enhanced form" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit 6; enhanced form" />
   </component>
 </project>
